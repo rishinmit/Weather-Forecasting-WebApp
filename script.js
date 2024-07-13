@@ -1,4 +1,4 @@
-const url = 'http://api.weatherapi.com/v1/current.json?key=68f193929564427da70184519241107&q=London';
+const url = 'http://api.weatherapi.com/v1/current.json?key=68f193929564427da70184519241107&q=Patna';
 const options = {
 	method: 'GET',
 	headers: {
@@ -16,5 +16,7 @@ const options = {
 // }
 fetch(url, options)
     .then(response => response.json())
-    .then(response => console.log(response))
+    .then(response => {
+        
+        console.log(response)})
     .catch(error => console.error(error));
