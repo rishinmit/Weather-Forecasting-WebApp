@@ -1,24 +1,46 @@
-localtime
-wind_mph:
-wind_kph:
-wind_degree:
-wind_dir:
-pressure_mb:
-pressure_in:
-precip_mm:
-precip_in
-humidity
-cloud
-feelslike_c
-feelslike_f
-windchill_c
-windchill_f
-heatindex_c
-heatindex_f
-dewpoint_c
-dewpoint_f
-vis_km
-vis_miles
-uv
-gust_mph
-gust_kph
+const url = 'http://api.weatherapi.com/v1/current.json?ke.innerHTMLy=68f193929564427da70184519241107&.innerHTMLq=Patna';
+const options= {
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': '68f193929564427da70184519241107',
+		'x-rapidapi-host': 'http://api.weatherapi.com/'
+	}
+};
+
+// try {
+// 	const response.innerHTML = await fetch(url, options);
+// 	const result.innerHTML = await response.text();
+// 	console.log(result);
+// } catch (error) {
+// 	console.error(error);
+// }
+fetch(url, options)
+    .then(response => response.json())
+    .then(response => {
+        // wind_mph.innerHTML = response.wind_mph
+        // wind_kph.innerHTML = response.wind_kph
+        // wind_degree.innerHTML = response.wind_degree
+        // wind_dir.innerHTML = response.wind_dir
+        // pressure_mb.innerHTML = response.pressure_mb
+        // pressure_in.innerHTML = response.pressure_in
+        // precip_mm.innerHTML = response.precip_mm
+        // precip_in.innerHTML = response.precip_in
+        // humidity.innerHTML = response.humidity
+        // cloud.innerHTML = response.cloud
+        // feelslike_c.innerHTML = response.feelslike_c
+        // feelslike_f.innerHTML = respone.feelslike_f
+        // windchill_c.innerHTML = respone.windchill_c
+        // windchill_f.innerHTML = respone.windchill_f
+        // heatindex_c.innerHTML = respone.heatindex_c
+        // heatindex_f.innerHTML = respone.heatindex_f
+        // dewpoint_c.innerHTML = respone.dewpoint_c
+        // dewpoint_f.innerHTML = respone.dewpoint_f
+        // vis_km.innerHTML = respone.vis_km
+        // vis_miles.innerHTML = respone.vis_miles
+        // uv.innerHTML = respone.uv
+        // gust_mph.innerHTML = respone.gust_mph
+        // gust_kph.innerHTML = respone.gust_kph
+        console.log(response)
+
+    })
+    .catch(error => console.error(error));
