@@ -35,11 +35,6 @@ fetch(url, options)
         // heatindex_f.innerHTML = respone.heatindex_f
         // dewpoint_c.innerHTML = respone.dewpoint_c
         // dewpoint_f.innerHTML = respone.dewpoint_f
-        // vis_km.innerHTML = respone.vis_km
-        // vis_miles.innerHTML = respone.vis_miles
-        // uv.innerHTML = respone.uv
-        // gust_mph.innerHTML = respone.gust_mph
-        // gust_kph.innerHTML = respone.gust_kph
         console.log(response)
 
     })
