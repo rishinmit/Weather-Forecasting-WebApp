@@ -17,9 +17,7 @@ const options= {
 fetch(url, options)
     .then(response => response.json())
     .then(response => {
-        // wind_mph.innerHTML = response.wind_mph
         // wind_kph.innerHTML = response.wind_kph
-        // wind_degree.innerHTML = response.wind_degree
         // wind_dir.innerHTML = response.wind_dir
         // pressure_mb.innerHTML = response.pressure_mb
         // pressure_in.innerHTML = response.pressure_in
