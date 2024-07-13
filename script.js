@@ -1,16 +1,20 @@
-const url = 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Seattle';
+const url = 'http://api.weatherapi.com/v1/current.json?key=68f193929564427da70184519241107&q=London';
 const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': '75686101camsh7c471595cd3e811p137179jsn7974776aceef',
-		'x-rapidapi-host': 'weather-by-api-ninjas.p.rapidapi.com'
+		'x-rapidapi-key': '68f193929564427da70184519241107',
+		'x-rapidapi-host': 'http://api.weatherapi.com/'
 	}
 };
 
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
+// try {
+// 	const response = await fetch(url, options);
+// 	const result = await response.text();
+// 	console.log(result);
+// } catch (error) {
+// 	console.error(error);
+// }
+fetch(url, options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(error => console.error(error));
