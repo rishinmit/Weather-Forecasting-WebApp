@@ -2,7 +2,7 @@ document.getElementById('weatherForm').addEventListener('submit', function(event
     event.preventDefault();
 
     const city = document.getElementById('city').value;
-    const apiKey = 'd2cf7cdb53fb46fc907152419241307';
+    const apiKey = '_';
     const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 
     fetch(url)
