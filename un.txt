@@ -1,8 +1,8 @@
-const url = 'http://api.weatherapi.com/v1/current.json?ke.innerHTMLy=68f193929564427da70184519241107&.innerHTMLq=Patna';
+const url = 'http://api.weatherapi.com/v1/current.json?ke.innerHTMLy=_.innerHTMLq=Patna';
 const options= {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': '68f193929564427da70184519241107',
+		'x-rapidapi-key': '_',
 		'x-rapidapi-host': 'http://api.weatherapi.com/'
 	}
 };
